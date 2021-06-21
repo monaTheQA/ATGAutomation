@@ -1,6 +1,5 @@
 package com.ATGAutomation.Tests;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.ATGAutomation.Pages.HomePage;
@@ -23,10 +22,7 @@ public class CreateCouponTest extends BaseTest{
 		homePage.clickOnV43Btn();
 		homePage.clickOnV4AllBtn();
 		homePage.clickOnNewCouponBtn();
-		homePage.clickOnBlankCouponBtn();
-		String actualResult = "ATG";
-		String expectedResult ="TTT";
-		Assert.assertEquals(actualResult, expectedResult);
+		homePage.clickOnBlankCouponBtn();	
 		
 	}
 
