@@ -16,7 +16,7 @@ public class CommonDriver {
 	public CommonDriver(String browserType) throws Exception
 	{
 		pageLoadTimeout = 20;
-		elementdetectionTimeout = 20;
+		elementdetectionTimeout = 10;
 		
 		currentDirectory = System.getProperty("user.dir");
 		if(browserType.equalsIgnoreCase("chrome"))
