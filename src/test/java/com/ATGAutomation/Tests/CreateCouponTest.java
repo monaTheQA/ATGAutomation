@@ -9,8 +9,8 @@ public class CreateCouponTest extends BaseTest{
 	@Test
 	public void createCoupon() throws InterruptedException
 	{
-		reportUtils.createATestCase("createCoupon");
-		reportUtils.addTestLog(Status.INFO, "performingLog");
+		//reportUtils.createATestCase("createCoupon");
+		//reportUtils.addTestLog(Status.INFO, "performingLog");
 		HomePage homePage = new HomePage(driver);
 		
 		homePage.acceptAlertCookies();
