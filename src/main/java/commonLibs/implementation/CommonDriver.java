@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class CommonDriver {
@@ -22,7 +23,9 @@ public class CommonDriver {
 		{
 			System.setProperty("webdriver.chrome.driver",
 					currentDirectory + "/drivers/chromedriver.exe");
-			driver = new ChromeDriver();
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("disable-features=NetworkService");				
+			driver = new ChromeDriver(options);
 		}
 		else if(browserType.equalsIgnoreCase("firefox"))
 		{

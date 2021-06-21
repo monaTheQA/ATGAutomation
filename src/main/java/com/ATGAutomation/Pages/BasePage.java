@@ -13,5 +13,4 @@ public class BasePage {
 		this.driver = driver;
 		elementControl = new ElementControl(driver);
 	}
-
 }
