@@ -63,7 +63,7 @@ public class CommonDriver {
 		driver.quit();
 	}
 	
-	public String getTilte()
+	public String getPageTilte()
 	{
 		return driver.getTitle();
 	}

@@ -27,7 +27,7 @@ public class ScreenshotUtils {
 		}
 		
 		tempFile = camera.getScreenshotAs(OutputType.FILE);
-		FileUtils.moveDirectory(imgFile, tempFile);
+		FileUtils.copyFile(tempFile, imgFile);
 	}
 
 }

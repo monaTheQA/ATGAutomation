@@ -1,5 +1,6 @@
 package com.ATGAutomation.Tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.ATGAutomation.Pages.HomePage;
@@ -12,6 +13,7 @@ public class CreateCouponTest extends BaseTest{
 		reportUtils.createATestCase("createCoupon");
 		reportUtils.addTestLog(Status.INFO, "performingLog");
 		HomePage homePage = new HomePage(driver);
+		
 		homePage.acceptAlertCookies();
 		homePage.clickOnSpelaLink();
 		homePage.scrolDown();
@@ -22,6 +24,10 @@ public class CreateCouponTest extends BaseTest{
 		homePage.clickOnV4AllBtn();
 		homePage.clickOnNewCouponBtn();
 		homePage.clickOnBlankCouponBtn();
+		String actualResult = "ATG";
+		String expectedResult ="TTT";
+		Assert.assertEquals(actualResult, expectedResult);
+		
 	}
 
 

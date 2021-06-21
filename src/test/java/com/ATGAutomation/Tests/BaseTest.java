@@ -62,7 +62,7 @@ public class BaseTest {
 		String testcaseName = result.getName();
 		long executionTime = System.currentTimeMillis();
 		String screenshotFileName = currentWorkingDirectory + "\\screenshots\\"
-				+ testcaseName + executionTime + ".jpeg";
+				+ testcaseName + executionTime + ".png";
 		System.out.println(screenshotFileName);
 		if(result.getStatus() == ITestResult.FAILURE)
 		{
