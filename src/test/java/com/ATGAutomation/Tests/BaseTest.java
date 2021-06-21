@@ -46,9 +46,9 @@ public class BaseTest {
 	@BeforeClass
 	public void setUp() throws Exception
 	{
-		url = configProperty.getProperty("baseUrl");
+		url = "https://www.atg.se/";  //configProperty.getProperty("baseUrl");
 		//url = "https://www.atg.se/";
-		String browserType = configProperty.getProperty("browserType");
+		String browserType = "chrome";  //configProperty.getProperty("browserType");
 		commonDriver = new CommonDriver(browserType);
 		driver = commonDriver.getDriver();
 		homePage = new HomePage(driver);
