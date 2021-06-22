@@ -16,9 +16,13 @@ public class CreateCouponTest extends BaseTest{
 		//reportUtils.createATestCase("createCoupon");
 		//reportUtils.addTestLog(Status.INFO, "performingLog");
 		HomePage homePage = new HomePage(driver);
-		homePage.acceptAlertCookies();		
-		homePage.clickOnSpelaLink();		
+		System.out.println("HomePage");
+		homePage.acceptAlertCookies();	
+		System.out.println("AlertCookies");
+		homePage.clickOnSpelaLink();	
+		System.out.println("SpelaLink");
 		homePage.scrolDown();		
+		System.out.println("Scrolldown");
 		homePage.clickOnV4Link();
 		homePage.clickOnV41Btn();
 		homePage.clickOnV42Btn();
