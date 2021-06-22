@@ -88,13 +88,18 @@ public class HomePage extends BasePage{
 	
 	public void acceptAlertCookies()
 	{
-		alertAccept.click();
+		try {
+			alertAccept.click();			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
 	}
 	
 	public void clickOnSpelaLink()
 	{
 		WebDriverWait wait = new WebDriverWait(driver,20);
-		 wait.until(ExpectedConditions.elementToBeClickable(allSpelaLink));
+		wait.until(ExpectedConditions.elementToBeClickable(allSpelaLink));
 		elementControl.clickElement(allSpelaLink);
 	}
 	
