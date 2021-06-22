@@ -33,6 +33,7 @@ public class BaseTest {
 	@BeforeSuite
 	public void preSetUp() throws Exception 
 	{
+		System.out.println("preSEUPPPPP");
 		currentWorkingDirectory = System.getProperty("user.dir");
 		System.out.println(currentWorkingDirectory);
 		configFileName = currentWorkingDirectory + "\\config\\config.properties";
