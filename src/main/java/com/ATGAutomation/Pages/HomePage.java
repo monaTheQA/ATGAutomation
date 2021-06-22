@@ -27,11 +27,11 @@ public class HomePage extends BasePage{
 	private WebElement alertAccept;
 	
 	@CacheLookup
-	@FindBy(xpath="//*[@id=\"sidemenu\"]/div/div[2]/div[2]/div/div/div[2]")
+	@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[2]")
 	private WebElement allSpelaLink;
 	
 	@CacheLookup
-	@FindBy(xpath="//*[@id=\"sidemenu\"]/div/div[2]/div[2]/div[2]/div/div/a[10]/div")
+	@FindBy(xpath="/html[1]/body[1]/div[2]/div[2]/div[1]/div[2]/div[2]/div[2]/div[1]/div[1]/a[10]/div[1]")
 	private WebElement v4Link;
 	
 	@CacheLookup
