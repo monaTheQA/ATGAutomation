@@ -30,7 +30,7 @@ public class BaseTest {
 	ReportUtils reportUtils;
 	ScreenshotUtils screenshot;
 	
-	@BeforeSuite
+	@BeforeSuite(alwaysRun=true)
 	public void preSetUp() throws Exception 
 	{
 		System.out.println("preSEUPPPPP");
@@ -44,7 +44,7 @@ public class BaseTest {
 		
 	}
 	
-	@BeforeClass
+	@BeforeClass(alwaysRun=true)
 	public void setUp() throws Exception
 	{
 		url = "https://www.atg.se/";  //configProperty.getProperty("baseUrl");
